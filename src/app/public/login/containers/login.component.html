@@ -1,0 +1,18 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img style="max-width:200px;" src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form (submit)="login($event)">
+        <input type="text" id="email" class="fadeIn second" [(ngModel)]="email" name="email" placeholder="email">
+        <input type="text" id="password" class="fadeIn third" [(ngModel)]="password" name="password" placeholder="contraseña">
+        <input type="submit" class="fadeIn fourth" value="Iniciar sesión">
+      </form>
+  
+    </div>
+  </div>

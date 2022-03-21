@@ -1,0 +1,32 @@
+<div >
+    <div class="titular">Productos</div>
+
+    <div class="container_cards" >
+        <article class="card" *ngFor="let product of products">
+            <div class="image">
+                <img src="https://mimovil.com.ec/pub/media/catalog/product/cache/23ba1ff494d021fc4e4d8121ef4353f5/r/e/redmi9agrisfront.png" alt="" /> 
+            </div>
+            <!-- <hr/> -->
+            <div class="info">
+                <div class="text">
+                    <strong>Nombre:</strong><p>{{product.name}}</p>
+                </div>
+                <div class="text">
+                    <strong>Precio: </strong><p>${{product.price}}</p>
+                </div>
+                <hr/>
+                <div class="text description">
+                   <p>{{product.description}}</p>
+                </div>
+                
+            </div>
+            
+            <a class="btn btn-primary btn-detalle">Ver más</a>
+
+        </article>
+    </div>
+       
+   
+
+</div>
+
